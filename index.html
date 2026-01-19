@@ -1,227 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yue Yang | Robotics & Medical Devices</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #fafafa;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        header {
-            text-align: center;
-            padding: 60px 0;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: white;
-        }
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        header p {
-            font-size: 1.2em;
-            opacity: 0.9;
-        }
-        .links {
-            margin-top: 20px;
-        }
-        .links a {
-            color: #4fc3f7;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        .links a:hover {
-            text-decoration: underline;
-        }
-        section {
-            background: white;
-            margin: 30px auto;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-        }
-        h2 {
-            color: #1a1a2e;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #4fc3f7;
-        }
-        .project {
-            padding: 20px;
-            margin: 15px 0;
-            background: #f8f9fa;
-            border-radius: 8px;
-            border-left: 4px solid #4fc3f7;
-        }
-        .project h3 {
-            color: #1a1a2e;
-            margin-bottom: 10px;
-        }
-        .project p {
-            color: #555;
-        }
-        .tags {
-            margin-top: 10px;
-        }
-        .tag {
-            display: inline-block;
-            background: #e3f2fd;
-            color: #1565c0;
-            padding: 3px 10px;
-            border-radius: 15px;
-            font-size: 0.85em;
-            margin: 3px 3px 3px 0;
-        }
-        .about-content {
-            display: flex;
-            gap: 30px;
-            align-items: flex-start;
-        }
-        .about-text {
-            flex: 1;
-        }
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 15px;
-        }
-        .skill {
-            background: #1a1a2e;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
-        }
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: #777;
-        }
-        @media (max-width: 600px) {
-            header h1 { font-size: 1.8em; }
-            .about-content { flex-direction: column; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yang Yue's Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Yue Yang</h1>
-            <p>MEng Mechanical Engineering | UCL</p>
-            <p>Robotics & Medical Device Research</p>
-            <div class="links">
-                <a href="mailto:your.email@ucl.ac.uk">Email</a>
-                <a href="https://github.com/YueYang101">GitHub</a>
-                <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
-            </div>
-        </div>
-    </header>
-
+  <header class="header">
     <div class="container">
-        <section>
-            <h2>About Me</h2>
-            <div class="about-text">
-                <p>I am a recent MEng Mechanical Engineering graduate from University College London, 
-                currently pursuing PhD opportunities in robotics and surgical simulation. 
-                My research interests focus on developing innovative medical devices and robotic systems 
-                for healthcare applications.</p>
-                
-                <div class="skills">
-                    <span class="skill">Robotics</span>
-                    <span class="skill">Embedded Systems</span>
-                    <span class="skill">3D Modeling</span>
-                    <span class="skill">Python</span>
-                    <span class="skill">C++</span>
-                    <span class="skill">ESP32</span>
-                    <span class="skill">Fusion 360</span>
-                    <span class="skill">SOFA Framework</span>
-                </div>
-            </div>
-        </section>
+      <h1 class="header__title">Yang Yue's Projects</h1>
+      <p class="header__subtitle">Robotics, AI, and Automation</p>
+    </div>
+  </header>
 
-        <section>
-            <h2>Projects</h2>
-            
-            <div class="project">
-                <h3>Facial Expression Robot System</h3>
-                <p>Developed a robotic facial expression system with 21 servo motors, 
-                integrating NVIDIA Audio2Face technology for realistic animation and voice AI integration.</p>
-                <div class="tags">
-                    <span class="tag">Robotics</span>
-                    <span class="tag">Servo Control</span>
-                    <span class="tag">NVIDIA Audio2Face</span>
-                </div>
-            </div>
-
-            <div class="project">
-                <h3>Cochlear Implant Navigation Tool</h3>
-                <p>Research project developing navigation tools for cochlear implant electrode insertion, 
-                using simulation and 3D modeling for surgical training.</p>
-                <div class="tags">
-                    <span class="tag">Medical Devices</span>
-                    <span class="tag">SOFA Framework</span>
-                    <span class="tag">Surgical Simulation</span>
-                </div>
-            </div>
-
-            <div class="project">
-                <h3>Bioimpedance Measurement System</h3>
-                <p>Built a bioimpedance analysis device using ESP32 and AD5940 components 
-                for medical measurement applications.</p>
-                <div class="tags">
-                    <span class="tag">Embedded Systems</span>
-                    <span class="tag">ESP32</span>
-                    <span class="tag">AD5940</span>
-                </div>
-            </div>
-
-            <div class="project">
-                <h3>Haptic Feedback Surgery Simulator</h3>
-                <p>Developed surgery simulators with haptic feedback systems for medical training, 
-                exploring NVIDIA Isaac Sim for training applications.</p>
-                <div class="tags">
-                    <span class="tag">Haptics</span>
-                    <span class="tag">Simulation</span>
-                    <span class="tag">Medical Training</span>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Education</h2>
-            <div class="project">
-                <h3>MEng Mechanical Engineering</h3>
-                <p>University College London (UCL)</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Contact</h2>
-            <p>Feel free to reach out for collaboration opportunities or research discussions.</p>
-            <p style="margin-top: 15px;">
-                <strong>Email:</strong> your.email@ucl.ac.uk<br>
-                <strong>GitHub:</strong> <a href="https://github.com/YueYang101">github.com/YueYang101</a><br>
-                <strong>Location:</strong> London, UK
-            </p>
-        </section>
+  <main class="container">
+    <!-- Filter Buttons -->
+    <div class="filter">
+      <button class="filter__btn active" data-filter="all">All</button>
+      <button class="filter__btn" data-filter="ongoing">Ongoing</button>
+      <button class="filter__btn" data-filter="completed">Completed</button>
     </div>
 
-    <footer>
-        <p>&copy; 2025 Yue Yang. All rights reserved.</p>
-    </footer>
+    <!-- Projects Grid -->
+    <div class="projects-grid">
+      <!-- Project 1: Face Robot (Ongoing) -->
+      <article class="project-card" data-status="ongoing">
+        <a href="projects/face-robot/index.html" class="project-card__image-link">
+          <div class="project-card__image">
+            <img src="Medias/Face Robot Cover.jpg" alt="Face Robot">
+          </div>
+        </a>
+        <div class="project-card__content">
+          <div class="project-card__header">
+            <h2 class="project-card__title">
+              <a href="projects/face-robot/index.html">Face Robot</a>
+            </h2>
+            <span class="badge badge--ongoing">Ongoing</span>
+          </div>
+          <p class="project-card__description">
+            22-DOF facial expression robot with Audio2Face integration and real-time emotion recognition.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag">Robotics</span>
+            <span class="tag">Model Deployment</span>
+            <span class="tag">Structure Design</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2: Hive-mind AI Coding System (Ongoing) -->
+      <article class="project-card" data-status="ongoing">
+        <a href="projects/hive-mind-ai/index.html" class="project-card__image-link">
+          <div class="project-card__image">
+            <span class="project-card__placeholder">🧠</span>
+          </div>
+        </a>
+        <div class="project-card__content">
+          <div class="project-card__header">
+            <h2 class="project-card__title">
+              <a href="projects/hive-mind-ai/index.html">Hive-mind AI Coding System</a>
+            </h2>
+            <span class="badge badge--ongoing">Ongoing</span>
+          </div>
+          <p class="project-card__description">
+            Multi-agent vibe-coding system with shared memory and specialized agent roles.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag">AI</span>
+            <span class="tag">Vibe-coding</span>
+            <span class="tag">Efficiency</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3: Fast UMI for Dual Robot Arms (Ongoing) -->
+      <article class="project-card" data-status="ongoing">
+        <a href="projects/fast-umi/index.html" class="project-card__image-link">
+          <div class="project-card__image">
+            <img src="Medias/Fast UMI Cover.jpeg" alt="Fast UMI for Dual Robot Arms">
+          </div>
+        </a>
+        <div class="project-card__content">
+          <div class="project-card__header">
+            <h2 class="project-card__title">
+              <a href="projects/fast-umi/index.html">Fast UMI for Dual Robot Arms</a>
+            </h2>
+            <span class="badge badge--ongoing">Ongoing</span>
+          </div>
+          <p class="project-card__description">
+            Machine learning-based manipulation system with SLAM and motion capture for robot demonstrations.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag">Manipulation</span>
+            <span class="tag">ML</span>
+            <span class="tag">SLAM</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4: Robot Arm Simulation (Completed) -->
+      <article class="project-card" data-status="completed">
+        <a href="projects/robot-arm/index.html" class="project-card__image-link">
+          <div class="project-card__image">
+            <img src="Medias/Lerobot Cover.jpeg" alt="Robot Arm Simulation">
+          </div>
+        </a>
+        <div class="project-card__content">
+          <div class="project-card__header">
+            <h2 class="project-card__title">
+              <a href="projects/robot-arm/index.html">Robot Arm Simulation</a>
+            </h2>
+            <span class="badge badge--completed">Completed</span>
+          </div>
+          <p class="project-card__description">
+            Lerobot SO101 replication with reinforcement learning in Isaac Lab and PS5 controller teleoperation.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag">ROS</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 5: Firefighting Robot (Completed) - External Link -->
+      <article class="project-card" data-status="completed">
+        <a href="https://github.com/YueYang101/Fire-Fighting-Robot" target="_blank" rel="noopener noreferrer" class="project-card__image-link">
+          <div class="project-card__image">
+            <img src="Medias/Firefighting Robot Cover.jpg" alt="Firefighting Robot">
+          </div>
+        </a>
+        <div class="project-card__content">
+          <div class="project-card__header">
+            <h2 class="project-card__title">
+              <a href="https://github.com/YueYang101/Fire-Fighting-Robot" target="_blank" rel="noopener noreferrer">
+                Firefighting Robot
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-left: 4px;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </h2>
+            <span class="badge badge--completed">Completed</span>
+          </div>
+          <p class="project-card__description">
+            6-wheel autonomous firefighting robot with SLAM navigation and fire detection capabilities.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag">ROS</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Yang Yue. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
